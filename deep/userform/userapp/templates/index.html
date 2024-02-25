@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>hello, django project</h1>
-    <form method="post">
+    <form method="POST" action="/show">
         {% csrf_token %}
         <label for="username">username :</label>
         <div>

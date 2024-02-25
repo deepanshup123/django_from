@@ -3,7 +3,7 @@ from .forms import userDetails
 from .models import userForm
 # Create your views here.
 def userdetails(request):
-    if request.method == 'post':
+    if request.method == 'POST':
         form = userDetails(request.POST)
         if form.is_valid():
             form.save()
